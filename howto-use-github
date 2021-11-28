@@ -1,0 +1,80 @@
+
+Step 1. 저장소(Repository) 생성하기
+1. 우상단의 '+' 버튼을 클릭하고 New repository를 선택한다. 
+ 
+ 2. "hello-world" 라고 이름을 주고, 간단하게 저장소에 대한 설명을 넣는다.
+3. Initialize this repository with a README 를 체크하고, Create repository 버튼을 클릭한다.
+ 
+ 
+ 
+ 
+ Step 2. 브랜치(Branch) 생성하기 
+브랜칭(Branching)은 하나의 저장소에서 서로 다른 버전을 동시에 작업하는 방법이다. 
+기본적으로 저장소는 "master"라는 이름의 메인 브랜치를 가진다.
+우리는 "master" 외의 다른 브랜치를 만들어서 "master"에 커밋하기 전에 수정하고 테스트한다. 
+master 외의 브랜치가 만들어지면 그 순간에 master의 카피 혹은 스냅샷이 생성된다.
+당신이 새로운 브랜치에서 작업하는동안 누군가 master 브랜치를 수정한다면
+당신은 그 업데이트들을 풀(pull)받을 수 있다.
+ 
+다음의 다이어그램에서 보여주는 내용은 다음과 같다. 
+•	master 브랜치
+•	feature라는 새로운 브랜치
+•	feature 브랜치가 master로 병합(merge)되기 전까지의 과정
+ 
+ 
+ 깃허브에서 개발자, 작가, 디자이너들은 브랜치를 사용하여 버그 수정 및 특정 작업을 master로부터 분리하고,
+수정이 완료되면 작업된 브랜치를  mater로 병합한다. 
+1. 좌상단에 Branch: master를 클릭한다. 
+2. "readme-edits" 라고 이름을 작성하고 밑에 Create branch: readme-edits를 클릭한다.
+  
+ 이제 브랜치가 두개(master, readme-edits)가 되었다.
+현재는 readme-edtis 브랜치로 설정되어 있는데, 아직 수정한게 없다보니 master와 완전히 동일하다.  
+ 
+ Step 3. 수정하고 커밋(Commit)하기 
+수정한 것을 저장하는 것을 커밋(commit)이라 한다.
+각 커밋은 수정된 내용을 설명하는 커밋 메시지를 가지는데, 커밋 메시지는 기록으로 남겨져 당신이 수정한 내용을 다른 사람들이 이해하도록 한다.
+ 1. README.md 파일을 클릭한다. 
+ 
+  2. 파일을 수정하기 위해 연필 아이콘을 클릭한다. 
+  
+ 3. README 파일에 아무 내용이나 작성한다
+ 
+ 4. 커밋메시지를 작성하고, Commit changes를 클릭한다. 
+ 
+ 수정된 내용은 readme-edits 브랜치에 적용되었다.
+따라서 이제 readme-edits 브랜치는 master 브랜치와 다른 내용을 가지게 된다. 
+Step 4. 풀(Pull) 요청하기
+master 외의 브랜치에서 수정된 내용이 생겼으므로 이제 풀 요청(Pull Request)을 할 수 있다. 
+풀 요청(Pull Request)은 깃허브에서 협업의 핵심이다. 당신은 풀 요청을 하여 당신이 수정한 내용을 제안하고, 다른 사람의 리뷰를 요청하여 다른 사람들이 수정된 내용을 그들의 브랜치에 병합하도록 한다. 풀 요청은 두 브랜치로부터 다른점을 보여주는데, 수정된 것과 추가된 것, 그리고 빠진것들이 녹색과 빨간색으로 보여진다. 
+커밋을 하면 바로 풀 요청을 열어서 토의를 시작할 수 있다. 
+깃허브의 멘션시스템을 사용하여, 당신은 특정 사람이나 팀에게 피드백을 요청할 수 있다. 
+1. Pull Request 탭을 선택하고, New pull request 버튼을 클릭한다. 
+ 
+ 2. 상단에서 compare를 선택하고 readme-edits로 바꾸거나 EXAMPLE COMPARISONS 박
+스에서 readme-edits 를 클릭한다.
+ 
+ 3. 수정된 내용을 확인한다. 추가된 것은 녹색으로 표시되고, 빠진 것은 빨간색으로 표시된다. 이상이 없다면 Create pull request를 클릭한다.
+ 
+ 
+ 4. 풀 요청에 대한 간단한 설명을 작성하고, Create pull request를 클릭한다.
+  
+ Step 5. 병합(Merge)하기
+마지막 단계로 readme-edits 브랜치를 master 브랜치로 병합한다. 
+1. Mearge pull request를 클릭한다. 
+ 
+ 
+2. confirm merge를 클릭한다.
+  
+3. 병합이 완료되어 readme-edits 브랜치는 필요 없으므로 Delete branch를 클릭하여 브랜치를 삭제한다.
+ 
+  
+번외) 브랜치 삭제하기 
+ 
+ 
+ 
+  브랜치 생성 후 브랜치 아이콘을 클릭하면 브랜치 리스트를 확인할 수 있다.
+
+  삭제하려는 브랜치의 휴지통 아이콘을 클릭하여 삭제한다.
+ 
+ 
+ 
